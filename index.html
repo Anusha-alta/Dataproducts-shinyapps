@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>New York Air Quality Measurements</title>
+  <meta charset="utf-8">
+  <meta name="description" content="New York Air Quality Measurements">
+  <meta name="author" content="Anusha Iyengar">
+  <meta name="generator" content="slidify" />
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta http-equiv="X-UA-Compatible" content="chrome=1">
+  <link rel="stylesheet" href="libraries/frameworks/io2012/css/default.css" media="all" >
+  <link rel="stylesheet" href="libraries/frameworks/io2012/css/phone.css" 
+    media="only screen and (max-device-width: 480px)" >
+  <link rel="stylesheet" href="libraries/frameworks/io2012/css/slidify.css" >
+  <link rel="stylesheet" href="libraries/highlighters/highlight.js/css/tomorrow.css" />
+  <base target="_blank"> <!-- This amazingness opens all links in a new tab. -->  <link rel=stylesheet href="./assets/css/ribbons.css"></link>
+
+  
+  <!-- Grab CDN jQuery, fall back to local if offline -->
+  <script src="http://ajax.aspnetcdn.com/ajax/jQuery/jquery-1.7.min.js"></script>
+  <script>window.jQuery || document.write('<script src="libraries/widgets/quiz/js/jquery.js"><\/script>')</script> 
+  <script data-main="libraries/frameworks/io2012/js/slides" 
+    src="libraries/frameworks/io2012/js/require-1.0.8.min.js">
+  </script>
+  
+  
+
+</head>
+<body style="opacity: 0">
+  <slides class="layout-widescreen">
+    
+    <!-- LOGO SLIDE -->
+        <slide class="title-slide segue nobackground">
+  <hgroup class="auto-fadein">
+    <h1>New York Air Quality Measurements</h1>
+    <h2>Analyze effect of Air Quality parameters on Temperature</h2>
+    <p>Anusha Iyengar<br/>Aspiring Data Scientist</p>
+  </hgroup>
+  <article></article>  
+</slide>
+    
+
+    <!-- SLIDES -->
+    <slide class="" id="slide-1" style="background:;">
+  <hgroup>
+    <h3>Introduction</h3>
+  </hgroup>
+  <article data-timings="">
+    <p>Analysis of Airquality Dataset: <b>Daily air quality measurements in New York, May to September 1973</b> to determine the impact of rising Ozone levels and Solar Radiation on daily Temperature.</p>
+
+<h3>Dataset used</h3>
+
+<p>Airquality dataset from the &quot;Datasets&quot; Package in R. </p>
+
+<h3>Tools used for analyis and presentation</h3>
+
+<p>R Programming Language
+<br/>
+Shiny Apps
+<br/>
+Slidify
+<br/></p>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="class" id="id" style="background:;">
+  <hgroup>
+    <h2>Intent and Assumptions</h2>
+  </hgroup>
+  <article data-timings="">
+    <p>It is no secret that higher levels of Ozone lead to higher temperatures. Like wise, does Hot days imply higher Solar Radiation? 
+How does Wind affect Temperature? The following analysis uses ShinyApps and R to analyse the 1973 New York Airquality dataset, in an attempt to answer these pertinent questions. </p>
+
+<h3>Assumptions</h3>
+
+<p>Following assumptions are made during the analysis process. </p>
+
+<p>Three variables were choses as Predictors  </p>
+
+<ul>
+<li>Ozone</li>
+<li>Solar.R </li>
+<li>Wind<br></li>
+</ul>
+
+<p>Temperature is chosen as the outcome. </p>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="class" id="id" style="background:;">
+  <hgroup>
+    <h2>Method</h2>
+  </hgroup>
+  <article data-timings="">
+    <p>Developed Interactive interface using ShinyApps and R  to </p>
+
+<pre><code>* Allow end-user to choose a Predictor
+* Create scatter plot of Temperature against Predictor
+* Perform Linear regression analysis between Temperature and predictor
+* Plot regression line on scatter plot
+* State Null Hypothesis and Alternate Hypothesis
+* Present p-value to determine validity of Null Hypothesis
+* Present correlation between predictor and temperature.
+</code></pre>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="class" id="id2" style="background:;">
+  <hgroup>
+    <h2>Sample Output &amp; Thank yous!</h2>
+  </hgroup>
+  <article data-timings="">
+    <p>Following is a sample graph plotting Temperature against Ozone. </p>
+
+<p><img src="assets/fig/unnamed-chunk-1-1.png" alt="plot of chunk unnamed-chunk-1">
+To view the shinyApp go to <a href="https://anushaiyengar.shinyapps.io/shiny_aq/">https://anushaiyengar.shinyapps.io/shiny_aq/</a></p>
+
+<p>I&#39;d like to thank Coursera and Prof. Brian Caffo of Johns Hopkins Institute for teaching this course and making it affordable. 
+Airquality Data is from the Datasets package in R. 
+Hope you enjoyed watching my presentation. Look forward to your feedback on this project. Thank you!!</p>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+    <slide class="backdrop"></slide>
+  </slides>
+  <div class="pagination pagination-small" id='io2012-ptoc' style="display:none;">
+    <ul>
+      <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=1 title='Introduction'>
+         1
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=2 title='Intent and Assumptions'>
+         2
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=3 title='Method'>
+         3
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=4 title='Sample Output &amp; Thank yous!'>
+         4
+      </a>
+    </li>
+  </ul>
+  </div>  <!--[if IE]>
+    <script 
+      src="http://ajax.googleapis.com/ajax/libs/chrome-frame/1/CFInstall.min.js">  
+    </script>
+    <script>CFInstall.check({mode: 'overlay'});</script>
+  <![endif]-->
+</body>
+  <!-- Load Javascripts for Widgets -->
+  
+  <!-- LOAD HIGHLIGHTER JS FILES -->
+  <script src="libraries/highlighters/highlight.js/highlight.pack.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script>
+  <!-- DONE LOADING HIGHLIGHTER JS FILES -->
+   
+  </html>
